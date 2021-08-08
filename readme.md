@@ -1,14 +1,14 @@
-# NFT Generator - Project
+# AlgoPigm
 
-This is a NFT generator that creates, renders and saves a set of algorithmatically generated assets.
+This is a NFT generator that creates and renders [AlgoPigs](https://opensea.io/collection/algopigm)
 
-[https://github.com/ThomasMott/NFT.git](https://github.com/ThomasMott/NFT.git)
+[https://github.com/ThomasMott/NFT.git](https://github.com/ThomasMott/algopigm.git)
 
 ## Installation
 
 clone repo:
 ```
-git clone https://github.com/ThomasMott/NFT.git
+git clone https://github.com/ThomasMott/algopigm.git
 ```
 cd into client and server folders and install dependencies:
 ```
