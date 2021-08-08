@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57.456" height="65.56" viewBox="0 0 57.456 65.56">
+  <g id="Group_33" data-name="Group 33" transform="translate(-4343.544 -751.599)">
+    <rect id="Rectangle_22" data-name="Rectangle 22" width="32" height="4" rx="2" transform="translate(4352 813.159)" fill="#fff"/>
+    <rect id="Rectangle_24" data-name="Rectangle 24" width="32" height="4" transform="translate(4392.456 765.003) rotate(135)" fill="#fff"/>
+    <rect id="Rectangle_25" data-name="Rectangle 25" width="33.93" height="4" rx="2" transform="translate(4346.373 762.174) rotate(45)" fill="#fff"/>
+    <rect id="Rectangle_23" data-name="Rectangle 23" width="32" height="4" transform="translate(4370 783.967) rotate(90)" fill="#fff"/>
+    <path id="Polygon_1" data-name="Polygon 1" d="M16,0,32,16H0Z" transform="translate(4384 784.599) rotate(180)" fill="#fff"/>
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="10" cy="10" r="10" transform="translate(4381 751.599)" fill="#fff"/>
+    <g id="Group_7" data-name="Group 7" transform="translate(243 13.599)">
+      <circle id="Ellipse_12" data-name="Ellipse 12" cx="2" cy="2" r="2" transform="translate(4123 763)"/>
+      <circle id="Ellipse_13" data-name="Ellipse 13" cx="1" cy="1" r="1" transform="translate(4117 759)"/>
+    </g>
+  </g>
+</svg>

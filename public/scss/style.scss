@@ -1,0 +1,49 @@
+//import scss
+@import './_nft.scss';
+//import font
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+	font-family: 'Comfortaa', cursive;
+
+	.buttons {
+		background-color: #ff3636;
+		padding: 24px 32px;
+		text-align: center;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 24px;
+
+			@media (min-width: 1280px) {
+				font-size: 40px;
+			}
+		}
+
+		&:hover {
+			background-color: #c50000;
+			cursor: pointer;
+		}
+
+		@media (min-width: 1280px) {
+			padding: 40px 64px;
+			text-align: left;
+		}
+	}
+
+	@media (min-width: 1280px) {
+		align-items: center;
+	}
+}

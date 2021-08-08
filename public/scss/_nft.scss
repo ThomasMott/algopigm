@@ -1,0 +1,106 @@
+#nft {
+	height: 640px;
+	width: 640px;
+	border-radius: 16px;
+	position: relative;
+	// box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 5px;
+
+	.nfc-t {
+		bottom: 0px;
+		height: 640px;
+		width: 640px;
+		position: absolute;
+
+		img {
+			display: none;
+
+			&.f {
+				position: absolute;
+				bottom: 48px;
+				right: 120px;
+			}
+
+			&.w {
+				position: absolute;
+				top: 96px;
+				right: 108px;
+			}
+
+			&.a {
+				position: absolute;
+				bottom: 48px;
+				left: 48px;
+			}
+
+			&.h {
+				position: absolute;
+				bottom: 276px;
+				left: 164px;
+				z-index: 2;
+			}
+
+			&.p {
+				position: absolute;
+				bottom: 160px;
+				left: 100px;
+			}
+		}
+
+		.sig {
+			position: relative;
+			top: 224px;
+			left: 130px;
+		}
+	}
+} 
+
+.logo {
+	position: fixed;
+	display: none;
+	bottom: 0;
+	right: 64px;
+
+	@media (min-width: 1280px) {
+		display: block;
+	}
+}
+
+.well {
+
+	.text {
+		max-width: 640px;
+		padding: 32px;
+		text-align: center;
+
+		h1 {
+			font-size: 24px;
+			margin-bottom: 16px;
+			line-height: 42px;
+			max-width: 640px;
+			color: #808080;
+
+			span {
+				color: #FF3636;
+			}
+		}
+		
+		p {
+			font-size: 14px;
+			line-height: 32px;
+			color: #808080;
+		}
+
+		@media (min-width: 1280px) {
+			padding: 64px;
+			text-align: left;
+		}
+	}
+
+	@media (min-width: 1280px) {
+		display: flex;
+	}
+}
+
+.nft-b {
+	position: absolute;
+}
