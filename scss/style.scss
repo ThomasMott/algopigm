@@ -1,5 +1,6 @@
 //import scss
 @import './_nft.scss';
+@import './nav.scss';
 //import font
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
@@ -14,7 +15,7 @@ body {
 	height: 100vh;
 	display: flex;
 	justify-content: center;
-	background-color: #fff;
+	background-color: #000000;
 	font-family: 'Comfortaa', cursive;
 
 	.buttons {
@@ -45,5 +46,9 @@ body {
 
 	@media (min-width: 1280px) {
 		align-items: center;
+	}
+
+	@media (min-width: 640px) {
+		background: #f3f3f3;
 	}
 }

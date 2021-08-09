@@ -1,71 +1,77 @@
-#nft {
-	height: 640px;
-	width: 640px;
-	border-radius: 16px;
-	position: relative;
-	// box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 5px;
-
-	.nfc-t {
-		bottom: 0px;
-		height: 640px;
-		width: 640px;
-		position: absolute;
-
-		img {
-			display: none;
-
-			&.f {
-				position: absolute;
-				bottom: 48px;
-				right: 120px;
-			}
-
-			&.w {
-				position: absolute;
-				top: 96px;
-				right: 108px;
-			}
-
-			&.a {
-				position: absolute;
-				bottom: 48px;
-				left: 48px;
-			}
-
-			&.h {
-				position: absolute;
-				bottom: 276px;
-				left: 164px;
-				z-index: 2;
-			}
-
-			&.p {
-				position: absolute;
-				bottom: 160px;
-				left: 100px;
-			}
-		}
-
-		.sig {
-			position: relative;
-			top: 32px;
-			left: 32px;
-		}
-	}
-} 
-
 .logo {
 	position: fixed;
-	display: none;
+	width: 64px;
 	bottom: 0;
 	right: 64px;
 
 	@media (min-width: 1280px) {
-		display: block;
+		width: 80px;
 	}
 }
 
 .well {
+	display: none;
+	margin-top: 160px;
+	
+	#nft {
+		height: 640px;
+		width: 640px;
+		border-radius: 16px;
+		position: relative;
+		// box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 5px;
+	
+		.nfc-t {
+			bottom: 0px;
+			height: 640px;
+			width: 640px;
+			position: absolute;
+	
+			img {
+				display: none;
+	
+				&.f {
+					position: absolute;
+					bottom: 48px;
+					right: 120px;
+				}
+	
+				&.w {
+					position: absolute;
+					top: 96px;
+					right: 108px;
+				}
+	
+				&.a {
+					position: absolute;
+					bottom: 48px;
+					left: 48px;
+				}
+	
+				&.h {
+					position: absolute;
+					bottom: 276px;
+					left: 164px;
+					z-index: 2;
+				}
+	
+				&.p {
+					position: absolute;
+					bottom: 160px;
+					left: 100px;
+				}
+			}
+	
+			.sig {
+				position: relative;
+				top: 32px;
+				left: 32px;
+			}
+		}
+	}
+
+	.nft-b {
+		position: absolute;
+	}
 
 	.text {
 		max-width: 640px;
@@ -96,11 +102,35 @@
 		}
 	}
 
+	@media (min-width: 640px) {
+		display: block;
+	}
+
 	@media (min-width: 1280px) {
 		display: flex;
+		margin-top: 0;
 	}
 }
 
-.nft-b {
-	position: absolute;
+.dead {
+	text-align: center;
+	margin-top: 160px;
+
+	img {
+		margin: 32px;
+		width: 200px;
+	}
+
+	p {
+		margin: 0 32px;
+		font-size: 18px;
+		line-height: 30px;
+		color: #fff;
+	}
+
+	@media (min-width: 640px) {
+		display: none;
+	}
 }
+
+

@@ -1,78 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
-#nft {
-  height: 640px;
-  width: 640px;
-  border-radius: 16px;
-  position: relative; }
-  #nft .nfc-t {
-    bottom: 0px;
-    height: 640px;
-    width: 640px;
-    position: absolute; }
-    #nft .nfc-t img {
-      display: none; }
-      #nft .nfc-t img.f {
-        position: absolute;
-        bottom: 48px;
-        right: 120px; }
-      #nft .nfc-t img.w {
-        position: absolute;
-        top: 96px;
-        right: 108px; }
-      #nft .nfc-t img.a {
-        position: absolute;
-        bottom: 48px;
-        left: 48px; }
-      #nft .nfc-t img.h {
-        position: absolute;
-        bottom: 276px;
-        left: 164px;
-        z-index: 2; }
-      #nft .nfc-t img.p {
-        position: absolute;
-        bottom: 160px;
-        left: 100px; }
-    #nft .nfc-t .sig {
-      position: relative;
-      top: 32px;
-      left: 32px; }
-
 .logo {
   position: fixed;
-  display: none;
+  width: 64px;
   bottom: 0;
   right: 64px; }
   @media (min-width: 1280px) {
     .logo {
-      display: block; } }
+      width: 80px; } }
 
-.well .text {
-  max-width: 640px;
-  padding: 32px;
-  text-align: center; }
-  .well .text h1 {
-    font-size: 24px;
-    margin-bottom: 16px;
-    line-height: 42px;
+.well {
+  display: none;
+  margin-top: 160px; }
+  .well #nft {
+    height: 640px;
+    width: 640px;
+    border-radius: 16px;
+    position: relative; }
+    .well #nft .nfc-t {
+      bottom: 0px;
+      height: 640px;
+      width: 640px;
+      position: absolute; }
+      .well #nft .nfc-t img {
+        display: none; }
+        .well #nft .nfc-t img.f {
+          position: absolute;
+          bottom: 48px;
+          right: 120px; }
+        .well #nft .nfc-t img.w {
+          position: absolute;
+          top: 96px;
+          right: 108px; }
+        .well #nft .nfc-t img.a {
+          position: absolute;
+          bottom: 48px;
+          left: 48px; }
+        .well #nft .nfc-t img.h {
+          position: absolute;
+          bottom: 276px;
+          left: 164px;
+          z-index: 2; }
+        .well #nft .nfc-t img.p {
+          position: absolute;
+          bottom: 160px;
+          left: 100px; }
+      .well #nft .nfc-t .sig {
+        position: relative;
+        top: 32px;
+        left: 32px; }
+  .well .nft-b {
+    position: absolute; }
+  .well .text {
     max-width: 640px;
-    color: #808080; }
-    .well .text h1 span {
-      color: #FF3636; }
-  .well .text p {
-    font-size: 14px;
-    line-height: 32px;
-    color: #808080; }
+    padding: 32px;
+    text-align: center; }
+    .well .text h1 {
+      font-size: 24px;
+      margin-bottom: 16px;
+      line-height: 42px;
+      max-width: 640px;
+      color: #808080; }
+      .well .text h1 span {
+        color: #FF3636; }
+    .well .text p {
+      font-size: 14px;
+      line-height: 32px;
+      color: #808080; }
+    @media (min-width: 1280px) {
+      .well .text {
+        padding: 64px;
+        text-align: left; } }
+  @media (min-width: 640px) {
+    .well {
+      display: block; } }
   @media (min-width: 1280px) {
-    .well .text {
-      padding: 64px;
-      text-align: left; } }
+    .well {
+      display: flex;
+      margin-top: 0; } }
 
-@media (min-width: 1280px) {
-  .well {
-    display: flex; } }
+.dead {
+  text-align: center;
+  margin-top: 160px; }
+  .dead img {
+    margin: 32px;
+    width: 200px; }
+  .dead p {
+    margin: 0 32px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff; }
+  @media (min-width: 640px) {
+    .dead {
+      display: none; } }
 
-.nft-b {
-  position: absolute; }
+/* nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #363537;
+  padding: 16px;
+  height: 64px;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  top: 0; }
+  .nav li a {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px; }
+  .nav li a:hover {
+    color: #ff3636;
+    text-decoration: none; }
+  .nav #current {
+    color: #ff3636;
+    text-decoration: none;
+    cursor: inherit; }
+  .nav .social {
+    display: none;
+    width: 240px; }
+    .nav .social a {
+      float: right; }
+    @media (min-width: 640px) {
+      .nav .social {
+        display: block; } }
+  .nav .soc-svg {
+    filter: contrast(0) brightness(100);
+    cursor: pointer;
+    width: 24px;
+    margin: 4px; }
+  .nav .soc-svg:hover {
+    filter: none;
+    width: 32px;
+    margin: 0; }
+  .nav .nav-links {
+    list-style: none;
+    width: 240px; }
+    .nav .nav-links li {
+      display: inline;
+      padding: 0 8px; }
+      .nav .nav-links li a {
+        font-size: 18px; }
+  .nav bottom p {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 32px 0; }
+
+.nav-lower {
+  background-image: url(../media/dropdown.png);
+  height: 8px;
+  width: 100%;
+  background-color: transparent;
+  background-repeat: repeat-x;
+  background-size: 80px 8px;
+  background-position: center center;
+  position: absolute;
+  top: 64px;
+  z-index: 8; }
+
+@media (min-width: 600px) {
+  .nav {
+    padding: 16px 40px; } }
+
+@media (min-width: 880px) {
+  .nav {
+    padding: 16px 48px; } }
 
 * {
   box-sizing: border-box;
@@ -84,7 +178,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  background-color: #000000;
   font-family: 'Comfortaa', cursive; }
   body .buttons {
     background-color: #ff3636;
@@ -107,3 +201,6 @@ body {
   @media (min-width: 1280px) {
     body {
       align-items: center; } }
+  @media (min-width: 640px) {
+    body {
+      background: #f3f3f3; } }
