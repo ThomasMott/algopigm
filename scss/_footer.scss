@@ -1,41 +1,18 @@
 /* nav */
-.nav {
+.footer {
 	display: flex;
 	justify-content: center;
-	background-color: #363537;
+	background-color: #0E9302;
 	height: 64px;
 	width: 100%;
-	position: absolute;
 	z-index: 10;
-	top: 0;
 
-	.nav-inner {
+	.footer-inner {
 		width: 100%;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		max-width: 1098px;
-
-		li a {
-			text-decoration: none;
-			color: #ffffff;
-		}
-	
-		li a:hover {
-			color: #ff3636;
-			text-decoration: none;
-		}
-	
-		#current {
-			color: #ff3636;
-			text-decoration: none;
-			cursor: inherit;
-		}
-	
-		a {
-			margin-bottom: 0;
-			line-height: normal;
-		}
 	
 		.social {
 			display: none;
@@ -43,7 +20,8 @@
 	
 			a {
 				float: right;
-				padding: 0 4px;
+				padding: 0 8px;
+				margin-bottom: 0;
 			}
 	
 			@media (min-width: 640px) {
@@ -63,42 +41,30 @@
 			width: 32px;
 			margin:0;
 		}
-	
-		.nav-links {
-			list-style: none;
-			width: 240px;
-	
-			li {
-				display: inline;
-				padding:  0 8px;
-			}
-		}
 	}
 }
 
-.nav-lower {
-	background-image: url(../media/dropdown.png);
-	height: 8px;
+.footer-lower {
+	background-image: url(../media/grass.png);
+	height: 48px;
 	width: 100%;
 	background-color: transparent;
 	background-repeat: repeat-x;
-	background-size: 80px 8px;
+	background-size: 88px 48px;
 	background-position: center center;
-	position: absolute;
-	top: 64px;
 	z-index: 8;
 }
 
 @media (min-width: 600px) {
 
-    .nav {
+    .footer {
         padding: 16px 40px;
     }
 }
 
 @media (min-width: 880px) {
 
-    .nav {
+    .footer {
         padding: 16px 48px;
     }
 }

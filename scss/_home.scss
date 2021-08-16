@@ -1,0 +1,34 @@
+.home {
+	display: flex;
+	justify-content: center;
+	background-color: #000000;
+
+	
+	@media (min-width: 1280px) {
+		align-items: center;
+	}
+
+	@media (min-width: 640px) {
+		background: #fff;
+	}
+}
+
+.buttons {
+	background-color: #ff3636;
+	padding: 24px 32px;
+	text-align: center;
+
+	h1 {
+		color: #fff;
+	}
+
+	&:hover {
+		background-color: #c50000;
+		cursor: pointer;
+	}
+
+	@media (min-width: 1280px) {
+		padding: 40px 64px;
+		text-align: left;
+	}
+}

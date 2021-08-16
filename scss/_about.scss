@@ -1,0 +1,136 @@
+.about {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.cover {
+	height: 320px;
+	background-image: url(../media/cover.png);
+	background-repeat: repeat-x;
+	background-position: center; 
+	
+
+}
+
+section {
+	padding: 120px 24px;
+
+	&.gr {
+		background-color: #f3f3f3;
+	}
+
+	&.lr {
+		background-color: #f8bcbc;
+	}
+
+	&.bl {
+		background-color: #000;
+	}
+	
+	.grid {
+		max-width: 1092px;
+
+		.c {
+			text-align: center;
+			margin: 32px;
+
+			&.p {
+				color: #808080;
+			}
+		}
+
+		@media (min-width: 768px) {
+			padding: 120px 0;
+		}
+	}
+
+	.bullet {
+		margin: auto;
+		display: block;
+		padding: 64px 0;
+	}
+
+	.yellow {
+		background-color: #fad121;
+		overflow: hidden;
+		transform: scale(1);
+		padding: 20px;
+		min-width: 320px;
+		max-width: 600px;
+		font-size: 32px;
+		color: #000;
+		border-radius: 35px;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		line-height: 30px;
+		cursor: pointer;
+		border: none;
+		display: block;
+		margin: 80px auto 0 auto;
+
+		&:hover {
+			background-color: #ebc415;
+		}
+	}
+
+	.faqs {
+
+		.faq {
+			border: 1px solid #e7e7e7;
+			margin: 16px;
+			border-radius: 16px;
+
+			.accordion {
+				cursor: pointer;
+				padding: 16px 32px;
+				width: 100%;
+				text-align: left;
+				border: none;
+				outline: none;
+				display: flex;
+				justify-content: space-between;
+				transition: 0.4s;
+				align-items: center;
+
+				h2 {
+					margin-bottom: 0;
+					font-size: 18px;
+				}
+		       }
+		       
+		       /* Style the accordion panel. Note: hidden by default */
+		       .panel {
+			       padding: 16px 32px;
+			       background-color: white;
+			       display: none;
+			       overflow: hidden;
+			       border-radius: 16px;
+
+			       p {
+				       margin-bottom: 16px;
+				       color: #808080;
+			       }
+			}
+       
+		       .accordion:after {
+			       content: '+'; /* Unicode character for "plus" sign (+) */
+			       font-size: 18px;
+			       font-weight: bold;
+		       }
+		       
+		       .active {
+
+				&:after {
+					content: "-";
+					color: #458dca;
+				}
+
+				h2 {
+					color: #458dca;
+				}
+		       	}
+	       }
+       }
+}
