@@ -2,7 +2,7 @@
 
 This is a NFT generator that creates and renders [AlgoPigs](https://opensea.io/collection/algopigm)
 
-[https://github.com/ThomasMott/NFT.git](https://github.com/ThomasMott/algopigm.git)
+[https://github.com/ThomasMott/algopigm.git](https://github.com/ThomasMott/algopigm.git)
 
 ## Installation
 
