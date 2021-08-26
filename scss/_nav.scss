@@ -2,7 +2,7 @@
 .nav {
 	display: flex;
 	justify-content: center;
-	background-color: #363537;
+	background-color: #000;
 	height: 64px;
 	width: 100%;
 	position: absolute;
@@ -15,6 +15,14 @@
 		justify-content: space-between;
 		align-items: center;
 		max-width: 1098px;
+
+		img {
+			margin-right: 16px;
+
+			@media (min-width: 640px) {
+				margin-right: 0;
+			}
+		}
 
 		li a {
 			text-decoration: none;
@@ -66,27 +74,18 @@
 	
 		.nav-links {
 			list-style: none;
-			width: 240px;
+			padding-left: 16px;
 	
 			li {
 				display: inline;
-				padding:  0 8px;
+				padding-right:  8px;
+			}
+
+			@media (min-width: 640px) {
+				padding-left: 0;
 			}
 		}
 	}
-}
-
-.nav-lower {
-	background-image: url(../media/dropdown.png);
-	height: 8px;
-	width: 100%;
-	background-color: transparent;
-	background-repeat: repeat-x;
-	background-size: 80px 8px;
-	background-position: center center;
-	position: absolute;
-	top: 64px;
-	z-index: 8;
 }
 
 @media (min-width: 600px) {

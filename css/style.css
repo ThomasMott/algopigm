@@ -11,6 +11,7 @@
 
 .well {
   display: none;
+  position: absolute;
   margin-top: 160px; }
   .well #nft {
     height: 640px;
@@ -98,7 +99,7 @@
 .nav {
   display: flex;
   justify-content: center;
-  background-color: #363537;
+  background-color: #000;
   height: 64px;
   width: 100%;
   position: absolute;
@@ -110,6 +111,11 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1098px; }
+    .nav .nav-inner img {
+      margin-right: 16px; }
+      @media (min-width: 640px) {
+        .nav .nav-inner img {
+          margin-right: 0; } }
     .nav .nav-inner li a {
       text-decoration: none;
       color: #ffffff; }
@@ -143,22 +149,13 @@
       margin: 0; }
     .nav .nav-inner .nav-links {
       list-style: none;
-      width: 240px; }
+      padding-left: 16px; }
       .nav .nav-inner .nav-links li {
         display: inline;
-        padding: 0 8px; }
-
-.nav-lower {
-  background-image: url(../media/dropdown.png);
-  height: 8px;
-  width: 100%;
-  background-color: transparent;
-  background-repeat: repeat-x;
-  background-size: 80px 8px;
-  background-position: center center;
-  position: absolute;
-  top: 64px;
-  z-index: 8; }
+        padding-right: 8px; }
+      @media (min-width: 640px) {
+        .nav .nav-inner .nav-links {
+          padding-left: 0; } }
 
 @media (min-width: 600px) {
   .nav {
@@ -219,123 +216,6 @@
 @media (min-width: 880px) {
   .footer {
     padding: 16px 48px; } }
-
-.home {
-  display: flex;
-  justify-content: center;
-  background-color: #000000; }
-  @media (min-width: 1280px) {
-    .home {
-      align-items: center; } }
-  @media (min-width: 640px) {
-    .home {
-      background: #fff; } }
-
-.buttons {
-  background-color: #ff3636;
-  padding: 24px 32px;
-  text-align: center; }
-  .buttons h1 {
-    color: #fff; }
-  .buttons:hover {
-    background-color: #c50000;
-    cursor: pointer; }
-  @media (min-width: 1280px) {
-    .buttons {
-      padding: 40px 64px;
-      text-align: left; } }
-
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-.cover {
-  height: 320px;
-  background-image: url(../media/cover.png);
-  background-repeat: repeat-x;
-  background-position: center; }
-
-section {
-  padding: 120px 24px; }
-  section.gr {
-    background-color: #f3f3f3; }
-  section.lr {
-    background-color: #f8bcbc; }
-  section.bl {
-    background-color: #000; }
-  section .grid {
-    max-width: 1092px; }
-    section .grid .c {
-      text-align: center;
-      margin: 32px; }
-      section .grid .c.p {
-        color: #808080; }
-    @media (min-width: 768px) {
-      section .grid {
-        padding: 120px 0; } }
-  section .bullet {
-    margin: auto;
-    display: block;
-    padding: 64px 0; }
-  section .yellow {
-    background-color: #fad121;
-    overflow: hidden;
-    transform: scale(1);
-    padding: 20px;
-    min-width: 320px;
-    max-width: 600px;
-    font-size: 32px;
-    color: #000;
-    border-radius: 35px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 30px;
-    cursor: pointer;
-    border: none;
-    display: block;
-    margin: 80px auto 0 auto; }
-    section .yellow:hover {
-      background-color: #ebc415; }
-  section .faqs .faq {
-    border: 1px solid #e7e7e7;
-    margin: 16px;
-    border-radius: 16px;
-    /* Style the accordion panel. Note: hidden by default */ }
-    section .faqs .faq .accordion {
-      cursor: pointer;
-      padding: 16px 32px;
-      width: 100%;
-      text-align: left;
-      border: none;
-      outline: none;
-      display: flex;
-      justify-content: space-between;
-      transition: 0.4s;
-      align-items: center; }
-      section .faqs .faq .accordion h2 {
-        margin-bottom: 0;
-        font-size: 18px; }
-    section .faqs .faq .panel {
-      padding: 16px 32px;
-      background-color: white;
-      display: none;
-      overflow: hidden;
-      border-radius: 16px; }
-      section .faqs .faq .panel p {
-        margin-bottom: 16px;
-        color: #808080; }
-    section .faqs .faq .accordion:after {
-      content: '+';
-      /* Unicode character for "plus" sign (+) */
-      font-size: 18px;
-      font-weight: bold; }
-    section .faqs .faq .active:after {
-      content: "-";
-      color: #458dca; }
-    section .faqs .faq .active h2 {
-      color: #458dca; }
 
 .grid {
   width: 100%;
@@ -469,6 +349,133 @@ section {
     .grid .col-12 {
       width: 100%; } }
 
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.cover {
+  height: 200px;
+  background-image: url(../media/cover.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 640px; }
+  @media (min-width: 768px) {
+    .cover {
+      height: 360px;
+      background-size: auto; } }
+
+section {
+  padding: 48px 24px;
+  margin-bottom: 32px; }
+  section.gr {
+    background-color: #f3f3f3; }
+  section.lr {
+    background-color: #c50000; }
+  section.bl {
+    background-color: #000; }
+  section .grid {
+    max-width: 1092px; }
+    section .grid .c {
+      text-align: center; }
+      section .grid .c.p {
+        color: #808080; }
+    @media (min-width: 768px) {
+      section .grid {
+        padding: 120px 0; } }
+  section .bullet {
+    margin: auto;
+    display: block;
+    padding: 64px 0; }
+  section .yellow {
+    background-color: #fad121;
+    overflow: hidden;
+    transform: scale(1);
+    padding: 20px;
+    min-width: 320px;
+    max-width: 600px;
+    font-size: 24px;
+    color: #000;
+    border-radius: 35px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 30px;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin: 80px auto 0 auto; }
+    section .yellow:hover {
+      background-color: #f8db57; }
+  section .faqs .faq {
+    border: 1px solid #e7e7e7;
+    margin: 16px;
+    border-radius: 16px;
+    /* Style the accordion panel. Note: hidden by default */ }
+    section .faqs .faq .accordion {
+      cursor: pointer;
+      padding: 16px 32px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      display: flex;
+      justify-content: space-between;
+      transition: 0.4s;
+      align-items: center; }
+      section .faqs .faq .accordion h2 {
+        margin-bottom: 0;
+        font-size: 17px; }
+    section .faqs .faq .panel {
+      padding: 16px 32px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+      border-radius: 16px; }
+      section .faqs .faq .panel p {
+        margin-bottom: 16px;
+        color: #808080;
+        max-width: none; }
+    section .faqs .faq .accordion:after {
+      content: '+';
+      /* Unicode character for "plus" sign (+) */
+      font-size: 18px;
+      font-weight: bold; }
+    section .faqs .faq .active:after {
+      content: "-";
+      color: #458dca; }
+    section .faqs .faq .active h2 {
+      color: #458dca; }
+  @media (min-width: 640px) {
+    section {
+      padding: 80px 24px;
+      margin: 0; } }
+
+.home {
+  display: flex;
+  justify-content: center;
+  background-color: #000000; }
+  @media (min-width: 1280px) {
+    .home {
+      align-items: center; } }
+  @media (min-width: 640px) {
+    .home {
+      background: #fff; } }
+
+.buttons {
+  background-color: #ff3636;
+  padding: 24px 32px;
+  text-align: center; }
+  .buttons h1 {
+    color: #fff; }
+  .buttons:hover {
+    background-color: #c50000;
+    cursor: pointer; }
+  @media (min-width: 1280px) {
+    .buttons {
+      padding: 40px 64px;
+      text-align: left; } }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -483,7 +490,8 @@ body {
     color: #1e1e1e; }
   body a, body p, body li {
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 32px; }
+    max-width: 640px;
+    margin: 0 auto 32px; }
   body p {
     color: #444; }
   body a {

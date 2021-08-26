@@ -5,23 +5,28 @@
 }
 
 .cover {
-	height: 320px;
+	height: 200px;
 	background-image: url(../media/cover.png);
 	background-repeat: repeat-x;
-	background-position: center; 
+	background-position: bottom;
+	background-size: 640px;
 	
-
+	@media (min-width: 768px) {
+		height: 360px;
+		background-size: auto;
+	}
 }
 
 section {
-	padding: 120px 24px;
+	padding: 48px 24px;
+	margin-bottom: 32px;
 
 	&.gr {
 		background-color: #f3f3f3;
 	}
 
 	&.lr {
-		background-color: #f8bcbc;
+		background-color: #c50000;
 	}
 
 	&.bl {
@@ -33,7 +38,6 @@ section {
 
 		.c {
 			text-align: center;
-			margin: 32px;
 
 			&.p {
 				color: #808080;
@@ -58,7 +62,7 @@ section {
 		padding: 20px;
 		min-width: 320px;
 		max-width: 600px;
-		font-size: 32px;
+		font-size: 24px;
 		color: #000;
 		border-radius: 35px;
 		text-align: center;
@@ -71,7 +75,7 @@ section {
 		margin: 80px auto 0 auto;
 
 		&:hover {
-			background-color: #ebc415;
+			background-color: #f8db57;
 		}
 	}
 
@@ -96,7 +100,7 @@ section {
 
 				h2 {
 					margin-bottom: 0;
-					font-size: 18px;
+					font-size: 17px;
 				}
 		       }
 		       
@@ -111,6 +115,7 @@ section {
 			       p {
 				       margin-bottom: 16px;
 				       color: #808080;
+				       max-width: none;
 			       }
 			}
        
@@ -132,5 +137,10 @@ section {
 				}
 		       	}
 	       }
-       }
+	}
+
+	@media (min-width: 640px) {
+		padding: 80px 24px;
+		margin: 0;
+	}
 }

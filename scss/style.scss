@@ -2,9 +2,9 @@
 @import './nft';
 @import './nav';
 @import './footer';
-@import './home';
-@import './about';
 @import './grid';
+@import './main';
+@import './generator';
 
 
 //import font
@@ -30,7 +30,8 @@ body {
 
 	a, p, li {
 		font-family: 'Open Sans', sans-serif;
-		margin-bottom: 32px;
+		max-width: 640px;
+		margin: 0 auto 32px;
 	}
 
 	p {
