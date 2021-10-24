@@ -1,0 +1,61 @@
+.chart {
+	margin: 24px 0;
+
+	.bar {
+		padding: 16px;
+		margin: 8px 0;
+		border-radius: 4px;
+	
+		p {
+			margin: 0;
+		}
+	
+		&.tty {
+			width: 20%;
+			background-color: $red;
+			
+			p {
+				color: #fff;
+				font-size: 16px;
+			}
+		}
+	
+		&.fty {
+			width: 40%;
+			background-color: $pink;
+
+			p {
+				font-size: 18px;
+			}
+		}
+	
+		&.sty {
+			width: 60%;
+			background-color: $green;
+
+			p {
+				color: #fff;
+				font-size: 20px;
+			}
+		}
+	
+		&.ety {
+			width: 80%;
+			background-color: $yellow;
+
+			p {
+				font-size: 22px;
+			}
+		}
+	
+		
+		&.ohd {
+			width: 100%;
+			background-color: $blue;
+
+			p {
+				font-size: 24px;
+			}
+		}
+	}
+}

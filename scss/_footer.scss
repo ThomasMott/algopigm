@@ -15,17 +15,12 @@
 		max-width: 1098px;
 	
 		.social {
-			display: none;
-			width: 240px; 
+			display: block;
 	
 			a {
 				float: right;
 				padding: 0 8px;
 				margin-bottom: 0;
-			}
-	
-			@media (min-width: 640px) {
-				display: block;
 			}
 		}
 	

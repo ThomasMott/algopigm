@@ -5,32 +5,35 @@
 }
 
 .cover {
-	height: 200px;
+	height: 208px;
 	background-image: url(../media/cover.png);
 	background-repeat: repeat-x;
 	background-position: bottom;
-	background-size: 640px;
+	background-size: 2400px;
 	
 	@media (min-width: 768px) {
-		height: 360px;
+		height: 520px;
 		background-size: auto;
+		background-size: 6000px;
 	}
 }
 
 section {
-	padding: 48px 24px;
-	margin-bottom: 32px;
+	padding: 24px;
+	margin: 32px 0;
 
 	&.gr {
 		background-color: #f3f3f3;
+		padding: 64px 24px;
 	}
 
 	&.lr {
-		background-color: #c50000;
+		background-color: $red;
+		margin: 0;
 	}
 
 	&.bl {
-		background-color: #000;
+		margin: 0;
 	}
 	
 	.grid {
@@ -45,37 +48,34 @@ section {
 		}
 
 		@media (min-width: 768px) {
-			padding: 120px 0;
+			padding: 0;
 		}
 	}
 
 	.bullet {
 		margin: auto;
 		display: block;
-		padding: 64px 0;
+		padding: 40px 0;
 	}
 
 	.yellow {
 		background-color: #fad121;
 		overflow: hidden;
-		transform: scale(1);
-		padding: 20px;
-		min-width: 320px;
-		max-width: 600px;
+		padding: 24px 32px;
 		font-size: 24px;
 		color: #000;
-		border-radius: 35px;
+		border-radius: 48px;
 		text-align: center;
 		text-decoration: none;
-		text-transform: uppercase;
-		line-height: 30px;
 		cursor: pointer;
 		border: none;
-		display: block;
-		margin: 80px auto 0 auto;
+		display: inline-block;
+		margin: 40px 16px 40px 16px;
 
 		&:hover {
 			background-color: #f8db57;
+			padding: 32px 40px;
+			margin: 32px 0 32px 0;
 		}
 	}
 
@@ -140,7 +140,7 @@ section {
 	}
 
 	@media (min-width: 640px) {
-		padding: 80px 24px;
-		margin: 0;
+		margin: 120px 0;
+		padding: 0;
 	}
 }
