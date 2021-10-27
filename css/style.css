@@ -1,5 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+#countholder .link {
+  margin-top: 40px; }
+
+#countholder a {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  background: #265;
+  border-radius: 10px;
+  text-decoration: none; }
+
+#countholder a:hover {
+  background: #487; }
+
+#countholder {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 48px;
+  background-color: #4B4B4B;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  line-height: 1.4; }
+
+#countholder > div {
+  padding: 4px 10px;
+  border-radius: 3px;
+  background: #FE0036;
+  display: inline-block; }
+
+#countholder div > span {
+  border-radius: 3px;
+  background: #FE0036;
+  display: inline-block; }
+
+#countholder .smalltext {
+  padding-top: 5px;
+  font-size: 16px; }
+
 .chart {
   margin: 24px 0; }
   .chart .bar {

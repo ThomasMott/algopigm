@@ -1,6 +1,7 @@
-//import scss
+//import scss vars first
 @import './variables';
-
+//import rest
+@import './timer';
 @import './chart';
 @import './nft';
 @import './footer';
