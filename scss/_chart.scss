@@ -11,40 +11,56 @@
 		}
 	
 		&.tty {
-			width: 20%;
+			width: 60%;
 			background-color: $red;
 			
 			p {
 				color: #fff;
 				font-size: 16px;
 			}
+
+			@media (min-width: 768px) {
+				width: 20%;
+			}
 		}
 	
 		&.fty {
-			width: 40%;
+			width: 70%;
 			background-color: $pink;
 
 			p {
 				font-size: 18px;
 			}
+
+			@media (min-width: 768px) {
+				width: 40%;
+			}
 		}
 	
 		&.sty {
-			width: 60%;
+			width: 80%;
 			background-color: $green;
 
 			p {
 				color: #fff;
 				font-size: 20px;
 			}
+
+			@media (min-width: 768px) {
+				width: 60%;
+			}
 		}
 	
 		&.ety {
-			width: 80%;
+			width: 90%;
 			background-color: $yellow;
 
 			p {
 				font-size: 22px;
+			}
+
+			@media (min-width: 768px) {
+				width: 80%;
 			}
 		}
 	

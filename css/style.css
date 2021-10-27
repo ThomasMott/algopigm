@@ -9,27 +9,39 @@
     .chart .bar p {
       margin: 0; }
     .chart .bar.tty {
-      width: 20%;
+      width: 60%;
       background-color: #FE0036; }
       .chart .bar.tty p {
         color: #fff;
         font-size: 16px; }
+      @media (min-width: 768px) {
+        .chart .bar.tty {
+          width: 20%; } }
     .chart .bar.fty {
-      width: 40%;
+      width: 70%;
       background-color: #F8CEE3; }
       .chart .bar.fty p {
         font-size: 18px; }
+      @media (min-width: 768px) {
+        .chart .bar.fty {
+          width: 40%; } }
     .chart .bar.sty {
-      width: 60%;
+      width: 80%;
       background-color: #00AE4D; }
       .chart .bar.sty p {
         color: #fff;
         font-size: 20px; }
+      @media (min-width: 768px) {
+        .chart .bar.sty {
+          width: 60%; } }
     .chart .bar.ety {
-      width: 80%;
+      width: 90%;
       background-color: #FFD302; }
       .chart .bar.ety p {
         font-size: 22px; }
+      @media (min-width: 768px) {
+        .chart .bar.ety {
+          width: 80%; } }
     .chart .bar.ohd {
       width: 100%;
       background-color: #C8DCDF; }
@@ -410,8 +422,7 @@ section {
       color: #458dca; }
   @media (min-width: 640px) {
     section {
-      margin: 120px 0;
-      padding: 0; } }
+      margin: 120px 0; } }
 
 .scrolldown {
   --color: white;
@@ -500,8 +511,8 @@ body {
     line-height: 24px;
     letter-spacing: 0; }
   body a, body p {
-    font-size: 17px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 36px;
     letter-spacing: 0.16; }
   body li {
     font-size: 16px;
